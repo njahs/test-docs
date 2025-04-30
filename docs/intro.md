@@ -79,4 +79,4 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
 :::
 
-[Test Link](./tutorial-basics/congratulations.md)
+[Test Link](/tutorial-basics/congratulations.md)
