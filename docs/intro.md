@@ -2,6 +2,7 @@
 sidebar_position: 1
 slug: /
 ---
+import Blueprint from '@site/src/components/Blueprint';
 
 # Tutorial Intro
 
@@ -80,3 +81,5 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 :::
 
 [Test Link](/tutorial-basics/congratulations.md)
+
+<Blueprint/>

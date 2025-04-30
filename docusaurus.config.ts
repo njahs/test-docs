@@ -146,6 +146,20 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  // plugins: [
+  //   [
+  //     './src/plugins/test-plugin',
+  //     { /* options */}
+  //   ]
+  // ]
+  scripts: [
+    {
+      src: 'bue-render/render.js',
+      async: true,
+    },
+  ], stylesheets: [
+    "bue-render/render.css"
+  ]
 };
 
 export default config;
