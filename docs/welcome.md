@@ -1,10 +1,9 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 slug: /
 ---
-import Blueprint from '@site/src/components/Blueprint';
 
-# Tutorial Intro
+# Welcome
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
@@ -81,5 +80,3 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 :::
 
 [Test Link](/tutorial-basics/congratulations.md)
-
-<Blueprint/>
