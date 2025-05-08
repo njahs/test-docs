@@ -51,7 +51,7 @@ export default {
     {
       type: 'category',
       label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
+      items: ['99-ignore-me/tutorial-basics/create-a-document'],
     },
   ],
 };
