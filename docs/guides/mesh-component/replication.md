@@ -2,6 +2,6 @@
 sidebar_position: 10
 ---
 
-# Deformation Material
+# Replication
 
 ## Coming soon

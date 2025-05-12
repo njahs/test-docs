@@ -1,7 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 # Settings
 
-Let's translate `docs/intro.md` to French.
+## Coming soon

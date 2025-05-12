@@ -10,8 +10,8 @@ const organizationName = "njahs";
 const projectName = "test-docs";
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Easy Static Mesh Deformation Component',
+  tagline: 'Deformation are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -74,10 +74,11 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    colorMode: { defaultMode: "dark" },
     navbar: {
-      title: 'My Site',
+      title: 'Deformation Component',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'MDeformation Component Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -85,7 +86,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         // {
@@ -99,12 +100,20 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Deformation Component',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Documentation',
               // to: '/docs/intro',
               to: '/',
+            },
+            {
+              label: 'FAB Marketplace',
+              href: 'https://fab.com/s/cd4ac83117ca',
+            },
+            {
+              label: 'Old Documentation',
+              href: 'https://docs.google.com/document/d/15rQ43N4Q9SQlBJg12ZPjgmUrXZX8UX5u07IsrkZnFo8/edit?usp=sharing',
             },
           ],
         },
@@ -112,16 +121,12 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/FMGbQ4JJhx',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Unreal Engine Forum',
+              href: 'https://forums.unrealengine.com/t/2476292',
             },
           ],
         },
@@ -132,26 +137,43 @@ const config: Config = {
             //   label: 'Blog',
             //   to: '/blog',
             // },
+            // {
+            //   label: 'GitHub',
+            //   href: 'https://github.com/facebook/docusaurus',
+            // },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Youtube',
+              href: 'https://www.youtube.com/@DebuggingDelightStudios',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Debugging Delight Studios. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    zoom: {
+      selector: '.markdown > img',
+      background: {
+        light: 'rgb(255, 255, 255)',
+        dark: 'rgb(50, 50, 50)'
+      },
+      config: {
+        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+      }
+    }
   } satisfies Preset.ThemeConfig,
   // plugins: [
   //   [
   //     './src/plugins/test-plugin',
   //     { /* options */}
   //   ]
-  // ]
+  // ],
+  plugins: [ 
+    [require.resolve('docusaurus-plugin-image-zoom'), { id: 'docusaurus-plugin-image-zoom' }],
+  ],
   scripts: [
     {
       src: 'bue-render/render.js',
