@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: RealtimeMeshComponent vs. ProceduralMeshComponent
 ---
 
 # Realtime Mesh Component
@@ -30,7 +31,7 @@ There's also a *paid* version of this plugin available on the [marketplace](http
 3. (Optional) Move the downloaded plugin to your project's plugin folder.
     - Default Installation Location: ``C:\Program Files\Epic Games\UE_[version]\Engine\Plugins``
 4. Enable the plugin in your project: **Edit > Plugins**
-5. Et voila, your deformable mesh should use *RealtimeMeshComponent* now. You can double check it by visiting the [component settings](./configuration.md) and check the value of "_Active Mesh Type_", this is either "_REALTIME_MESH_" or "_PROCEDURAL_MESH_"
-    - Alternatively there is also an _Mesh Type_ property inside every DeformableMeshComponent.
+5. Et voila, your deformable mesh should use *RealtimeMeshComponent* now. You can double check it by visiting the [component project settings](./configuration.md) and check the value of "_Active Mesh Type_", this is either "_REALTIME_MESH_" or "_PROCEDURAL_MESH_"
+    - Alternatively there is also an _Mesh Type_ property inside every *DeformableMeshComponent*.
 6. In case this does not work, try to clean your solution (delete _intermediate_ + _binaries_ folder of your project and plugin) and rebuild your solution. 
-    - When switching from PMC to RMC (or vice versa) we actually define a C++ preprocessor "_USE\_RMC_" and this switches everything inside our component to the respective mesh component. This logic is inside the plugin's _build.cs_ file.
+    - When switching from PMC to RMC (or vice versa) we actually un-/define a C++ preprocessor "_USE\_RMC_" and this switches everything inside our component and the tool to the respective mesh component type. This logic is triggered inside the plugin's _build.cs_ file.

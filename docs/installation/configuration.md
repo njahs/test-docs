@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: Quick overview of the project settings
 ---
 
 # Plugin Configuration

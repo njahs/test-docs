@@ -5,78 +5,10 @@ slug: /
 
 # Welcome
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the documentation of the **Easy Static Mesh Deformation Component** - a powerful and flexible solution for deforming static meshes in Unreal Engine. This component was developed from the ground up to close a gap that no standard solution within Unreal Engine or common third-party tools reliably covers so far: the easy, dynamic, runtime-capable deformation of static meshes - regardless of their physics behavior.
 
-## Getting Started
+In contrast to other approaches, which usually rely on *skeletal meshes*, this component works with static meshes. This allows for *simple* integration and offers a high-performance way of displaying visible deformations in the game - for example in the event of vehicle collisions.
 
-Get started by **creating a new site**.
+It is important to note that the component is not a substitute for complex systems such as Chaos Destruction or high-end soft body simulations. Hyper realistic deformation and physics-driven destruction are not the focus. Rather, it offers a practical solution for visual feedback and controlled mesh modifications in scenarios where full destruction or complex simulations are not necessary or desired.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
-
-
-
-:::note
-
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
-
-:::
-
-:::tip
-
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
-
-:::
-
-:::info
-
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
-
-:::
-
-:::warning
-
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
-
-:::
-
-:::danger
-
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
-
-:::
-
-[Test Link](/99-ignore-me/tutorial-basics/congratulations.md)
+In this documentation you will learn how to integrate, customize and efficiently use the component in your project - from simple application examples to advanced possibilities.
