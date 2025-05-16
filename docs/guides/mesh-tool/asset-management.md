@@ -13,11 +13,15 @@ import AssetRefresh from './img/tool-asset-refresh.webp';
 
 ## Create a new Deformable Mesh
 
+:::info
+You can only create a deformable mesh from a static mesh! If you have a skeletal mesh you can always [convert it to a static mesh](https://dev.epicgames.com/documentation/en-us/unreal-engine/skeletal-mesh-to-static-mesh-conversion-in-unreal-engine).
+:::
+
 Before creating a new deformable mesh you should make sure that you have a [suitable static mesh](../mesh-asset/staticmesh.md). But even if you don't have one *yet*, you can always come back later and just re-save the deformable mesh after you made changes to the static mesh itself!
 
-1. When entering the Deformation Data Tool the first time, you'll be greeted with this (or a similar looking) widget: <img src={EmptySmall} style={{width: 400}} />
-2. To create a new deformable mesh, click the "**+**" Button right next to the deformable mesh selection
-3. The tool will reveal a new panel options panel and a "*Create*" button. The only thing you **have to select** is a static mesh (*SM_Boxtruck_01a* in this example)<br/><img src={Create} style={{width: 400}} />
+1. When entering the Deformation Data Tool, you'll be greeted with this (or a similar looking) widget: <img src={EmptySmall} style={{width: 400}} />
+2. To create a new deformable mesh, click the "**+**" Button right next to the deformable mesh selection.
+3. The tool will reveal a new options panel including a "*Create*" button. The only thing you **have to select** is a static mesh (*SM_Boxtruck_01a* in this example). See [**Asset Options**](./asset-options.md) for more information.<br/><img src={Create} style={{width: 400}} />
 4. After all options are configured you can finally click on the "**Create**" button to create the deformable mesh asset. This will open a **save dialog**:<br/><img src={SaveDialog} style={{width: 400}} />
 5. You have to choose where to save the deformable mesh (asset). This can be anywhere, by default it'll preselect the */DeformableStaticMesh/Data* folder. This can be changed in the [plugin configuration](../../installation/configuration.md), as well as the suggested asset name.
 

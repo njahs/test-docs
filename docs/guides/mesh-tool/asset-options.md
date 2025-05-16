@@ -57,4 +57,4 @@ This option is **only** available when using [RealtimeMeshComponent](../../insta
 ## Additional Information
 
 - Asset Version: This indicates which version (RMC or PMC) was used when creating this asset. This currently only affects LODs (*PMC does not support them*).
-- Asset Disk Size: This is the disk size of the selected deformable mesh
+- Asset Disk Size: This is the disk size of the current deformable mesh
