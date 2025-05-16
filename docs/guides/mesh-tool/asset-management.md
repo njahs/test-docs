@@ -4,17 +4,12 @@ sidebar_position: 5
 
 # Asset Management
 
-import Options from './img/tool-options.png';
 import EmptySmall from './img/tool-empty-small.png';
 import Create from './img/tool-create.png';
 import SaveDialog from './img/tool-save-dialog.png';
 import CreatedAsset from './img/tool-created-asset.png';
 import Edit from './img/tool-edit.png';
 import AssetRefresh from './img/tool-asset-refresh.webp';
-
-:::warning
-After making changes to the static mesh itself, you **have to** open and save (or [refresh](#refreshing-an-existing-deformable-mesh)) the deformable mesh! Otherwise your changes made to the static mesh will NOT be adopted to the deformable mesh.
-:::
 
 ## Create a new Deformable Mesh
 

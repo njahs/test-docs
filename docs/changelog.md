@@ -38,7 +38,7 @@ sidebar_position: 25
 
 ## Version 2.0 (05/2025)
 - New documentation ([old documentation](https://docs.google.com/document/d/15rQ43N4Q9SQlBJg12ZPjgmUrXZX8UX5u07IsrkZnFo8/edit?usp=sharing))
-- Complete overhaul of the [Deformable Mesh Tool](./guides/mesh-tool/introduction.md)
+- Complete overhaul of the [Deformable Mesh Tool](./guides/mesh-tool/overview.md)
 - Switch from DataTable to **DataAsset** (DeformableMesh)
     - One mesh per data asset instead of potentially multiple meshes in one data table. Migrate or re-create your old DataTables
 - Support for external marketplace plugin "[**RealtimeMeshComponent**](./installation/realtimemesh.md)"
