@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Chaos Vehicle Deformation
+# Chaos Vehicle
 
 ## Coming soon
 
