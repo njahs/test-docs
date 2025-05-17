@@ -37,10 +37,11 @@ sidebar_position: 25
 - Minor bugfixes.
 
 ## Version 2.0 (05/2025)
+- [*Upgrade-Guide*](./upgrading.md#version-1x-to-2x)
 - New documentation ([old documentation](https://docs.google.com/document/d/15rQ43N4Q9SQlBJg12ZPjgmUrXZX8UX5u07IsrkZnFo8/edit?usp=sharing))
 - Complete overhaul of the [Deformable Mesh Tool](./guides/mesh-tool/overview.md)
-- Switch from DataTable to **DataAsset** (DeformableMesh)
-    - One mesh per data asset instead of potentially multiple meshes in one data table. [Migrate](upgrading.md) or re-create your old DataTables
+- **Switch from *DataTable* to *DataAsset*** (DeformableMesh)
+    - One mesh per data asset instead of potentially multiple meshes in one data table. See [*Upgrade-Guide*](./upgrading.md#version-1x-to-2x)
 - Support for external marketplace plugin "[**RealtimeMeshComponent**](./installation/realtimemesh.md)"
 - Support for **LODs** (_only in combination with RealtimeMeshComponent_)
 - Refactorings
