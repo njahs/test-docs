@@ -24,12 +24,12 @@ We need this data to create the RealtimeMeshComponent / ProceduralMeshComponent.
 
 ## Prepare Groups
 
-We *recommend* to use this option. There are similar advantages and disadvantages here as with the *prepared mesh data*, but the needed performance to calculate / determine the groups is not "as bad" as the required disk size. In our tests the required disk size is about 5% of the total deformable mesh disk size when the mesh data is also prepared.  (*in previous versions < 2.0 the groups were **always** prepared*)
+We *recommend* to use this option. There are similar advantages and disadvantages here as with the *prepared mesh data*, but the needed performance to calculate / determine the groups is not "as bad" as the required disk size. In our tests the required disk size is about 5% of the total Deformable Mesh disk size when the mesh data is also prepared.  (*in previous versions < 2.0 the groups were **always** prepared*)
 
-Example: The prepared groups for an 80.000 vertices mesh only need about 300kb of disk size. The entire deformable mesh asset was about 10mb in this test.
+Example: The prepared groups for an 80.000 vertices mesh only need about 300kb of disk size. The entire Deformable Mesh asset was about 10mb in this test.
 
 :::warning
-After making changes to the static mesh itself, you **have to** open and re-save (or [refresh](./asset-management.md#refreshing-an-existing-deformable-mesh)) the deformable mesh when you prepare the mesh data or the groups! Otherwise your changes made to the static mesh will NOT be adopted to the deformable mesh.
+After making changes to the static mesh itself, you **have to** open and re-save (or [refresh](./asset-management.md#refreshing-an-existing-deformable-mesh)) the Deformable Mesh when you prepare the mesh data or the groups! Otherwise your changes made to the static mesh will NOT be adopted to the Deformable Mesh.
 :::
 
 ## Static Mesh
@@ -52,9 +52,9 @@ You can visualize the groups using the *vertexmode* in the [viewport](./explorer
 
 ## Use LODs
 
-This option is **only** available when using [RealtimeMeshComponent](../../installation/realtimemesh.md). This will enable LODs for the deformable mesh. The LODs will also deform.
+This option is **only** available when using [RealtimeMeshComponent](../../installation/realtimemesh.md). This will enable LODs for the Deformable Mesh. The LODs will also deform.
 
 ## Additional Information
 
 - Asset Version: This indicates which version (RMC or PMC) was used when creating this asset. This currently only affects LODs (*PMC does not support them*).
-- Asset Disk Size: This is the disk size of the current deformable mesh
+- Asset Disk Size: This is the disk size of the current Deformable Mesh

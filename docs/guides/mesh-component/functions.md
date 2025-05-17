@@ -11,7 +11,7 @@ import FunctionMaterial from './img/function-Material.png';
 
 ## Add Hit at Location
 
-<img src={FunctionAddHitAtLocation} style={{float: "right"}} />
+<img src={FunctionAddHitAtLocation} style={{float: "right", maxWidth: "50%"}} />
 
 Perform a manual hit and (optionally) apply an impulse to the actor.
 
@@ -29,7 +29,7 @@ Perform a manual hit and (optionally) apply an impulse to the actor.
 
 ## Reset Deformation
 
-<img src={FunctionResetDeformation} style={{float: "right"}} />
+<img src={FunctionResetDeformation} style={{float: "right", maxWidth: "50%"}} />
 
 Reset the deformation and optionally refresh the mesh itself.
 
@@ -39,7 +39,7 @@ Reset the deformation and optionally refresh the mesh itself.
 
 ## Update mesh
 
-<img src={FunctionUpdateMesh} style={{float: "right"}} />
+<img src={FunctionUpdateMesh} style={{float: "right", maxWidth: "50%"}} />
 
 This will refresh the visible mesh (e.g. after [Reset Deformation](#reset-deformation)). *Normally you don't have to call this manually*.
 

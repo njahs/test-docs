@@ -27,13 +27,13 @@ We include one drivable car and an example map on which the deformation can be t
     <img src={ExampleCar} />
     <div style={{display: "flex", maxWidth: "100%"}}>
       <div style={{width: "50%"}}>**Left**: Vehicle while in editor (only skeletal mesh is visible)</div>
-      <div style={{width: "50%"}}>**Right**: Vehicle while playing (deformable mesh is visible)</div>
+      <div style={{width: "50%"}}>**Right**: Vehicle while playing (Deformable Mesh is visible)</div>
     </div>
     **Location**: /Plugins/DeformableStaticMesh/Content/Example/ChaosVehicleExample/
 
     The example car is a ChaosVehicle (``AWheeledVehiclePawn``) that uses a _placeholder skeletal mesh_. This is NOT necessary, but because the skeletal mesh is only used for collision it (*most of the time*) does not matter how it looks. For more information see: [**Chaos Vehicle**](../advanced-guides/chaos-vehicle.md)
 
-    There is a special material override that overrides the default material of the mesh with a [_deformable_ material](../advanced-guides/deformation-material.md). This makes dents even more visible. In addition to that there's also a [protection box](../advanced-guides/protectionbox.md) that prevents the driver side (left) from deforming too much.
+    There is a special material override that overrides the default material of the mesh with a [_deformable_ material](../advanced-guides/deformation-material.md) (`/DeformableStaticMesh/Content/Materials/Example/M_Deformable_TestVehicle`). This makes dents even more visible and enables hazard lights. In addition to that there's also a [protection box](../advanced-guides/protectionbox.md) that prevents the driver side (left) from deforming too much.
 
     Other than that it's really just a simple _ChaosVehicle_ with basic movement and three special shortcuts:
     - **R**: Reset Vehicle (position)

@@ -22,7 +22,7 @@ The *Explorer* has two parts, the Viewport and the Groups overview.
 </div>
 <br/>
 
-The viewport is simple: It displays the current deformable mesh. At the moment we use a procedural mesh to display the deformable mesh regardless of whether the actual deformation component uses a realtime mesh or not. The following options can be changed (they are located on the right):
+The viewport is simple: It displays the current Deformable Mesh. At the moment we use a procedural mesh to display the Deformable Mesh regardless of whether the actual deformation component uses a realtime mesh or not. The following options can be changed (they are located on the right):
 - The viewport can be turned on and off using the **Viewport** button 
 - You can also choose what **LOD** to show in the viewport (only available when using RMC).
 - You can preview the group distribution using the **Vertexmode**. This will apply a custom material to the viewport mesh that'll display the different groups using different colors. In this mode you can de-/select single or multiple groups in the groups list and only the selected groups will be colorized.
@@ -33,4 +33,4 @@ The viewport is simple: It displays the current deformable mesh. At the moment w
 
 <img src={Groups} style={{width:  "50%"}} />
 
-In the upper part of this section you have the viewport options. Below that you have detailed information about the groups of the current deformable mesh, how many groups were created, how many vertices the mesh has and a list of all groups.
+In the upper part of this section you have the viewport options. Below that you have detailed information about the groups of the current Deformable Mesh, how many groups were created, how many vertices the mesh has and a list of all groups.

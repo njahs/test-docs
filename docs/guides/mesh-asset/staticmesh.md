@@ -11,7 +11,7 @@ import NotConnected from './img/boxtruck-not-connected.webp';
 import NotConnectedBlender from './img/boxtruck-not-connected-blender.gif';
 import OneSidedMesh from './img/OneSided-mesh.webp';
 
-When it comes to the static mesh that's used for the deformable mesh, the following aspects should be taken into account:
+When it comes to the static mesh that's used for the Deformable Mesh, the following aspects should be taken into account:
 
 - Your static mesh **SHOULD NOT** have overlapping vertices / faces / edges!
 <details>
