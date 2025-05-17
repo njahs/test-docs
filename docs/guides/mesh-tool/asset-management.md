@@ -23,7 +23,7 @@ Before creating a new Deformable Mesh you should make sure that you have a [suit
 2. To create a new Deformable Mesh, click the "**+**" Button right next to the Deformable Mesh selection.
 3. The tool will reveal a new options panel including a "*Create*" button. The only thing you **have to select** is a static mesh (*SM_Boxtruck_01a* in this example). See [**Asset Options**](./asset-options.md) for more information.<br/><img src={Create} style={{width: 400}} />
 4. After all options are configured you can finally click on the "**Create**" button to create the Deformable Mesh asset. This will open a **save dialog**:<br/><img src={SaveDialog} style={{width: 400}} />
-5. You have to choose where to save the Deformable Mesh (asset). This can be anywhere, by default it'll preselect the ``/DeformableStaticMesh/Data`` folder. This can be changed in the [plugin configuration](../../installation/configuration.md), as well as the suggested asset name.
+5. You have to choose where to save the Deformable Mesh (Asset). This can be anywhere, by default it'll preselect the ``/DeformableStaticMesh/Data`` folder. This can be changed in the [plugin configuration](../../installation/configuration.md#tool-settings), as well as the suggested asset name.
 
 <img src={CreatedAsset} />
 Now you'll have a new Deformable Mesh, congratulation!

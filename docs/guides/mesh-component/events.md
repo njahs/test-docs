@@ -14,7 +14,7 @@ import EventMeshUpdated from './img/event-MeshUpdated.png';
 
 <img src={EventMeshLoaded} style={{float: "right", maxWidth: "50%"}} />
 
-Called when the Deformable Mesh (asset) is fully prepared and loaded.
+Called when the Deformable Mesh (Asset) is fully prepared and loaded.
 
 **NOTE**: You should check ``bIsMeshLoaded`` before binding/waiting for this event to trigger, because the mesh may already be loaded!
 

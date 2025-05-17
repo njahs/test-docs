@@ -11,5 +11,5 @@ The **DeformationDataTool** is where you'll *create*, *edit* and *preview* your 
 
 <img src={Overview} style={{width: 600}} />
 
-You can open it either by double-clicking a Deformable Mesh asset in the content browser or using the toolbar button in your editor: 
+You can open it either by **double-clicking** a Deformable Mesh Asset in the content browser or using the toolbar button in your editor: 
 <img src={Button} />
