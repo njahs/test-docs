@@ -4,9 +4,6 @@ sidebar_position: 0
 
 # Deformable Mesh Component
 
-import CompTree from './img/comp-tree.png';
-import CompAdd from './img/comp-add.png';
-
 ![BP Component](./img/bp-comp.webp)
 
 The Deformable Mesh Comp is the counterpart to the [Deformation Data Tool](../mesh-tool/overview.md). This is where the magic happens. Here the collected data from the [Deformable Mesh (Asset)](../mesh-asset/overview.md) that we previously created is processed. The component simply works according to the **plug & play** system: You simply place it below the *vehicle mesh / mesh to deform*, give the component some information and the component regulates the rest independently.
@@ -29,6 +26,3 @@ The *Deformable Mesh Component* itself has **NO COLLISION**! It uses the collisi
     In order to make the whole thing even more realistic visually, we use this affected group in another procedure in which we change the vertex color to which a material instance can then react and then color scratches (via a mask) and dents (via the normal input) in this area.
     </p>
 </details>
-
-<img src={CompAdd} />
-<img src={CompTree} style={{verticalAlign: "top"}} />
