@@ -4,6 +4,6 @@ sidebar_position: 3
 
 # Chaos Vehicle
 
-## Coming soon
+## Work In Progress
 
 ## skeletal-placeholder

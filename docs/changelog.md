@@ -40,22 +40,23 @@ sidebar_position: 25
 - New documentation ([old documentation](https://docs.google.com/document/d/15rQ43N4Q9SQlBJg12ZPjgmUrXZX8UX5u07IsrkZnFo8/edit?usp=sharing))
 - Complete overhaul of the [Deformable Mesh Tool](./guides/mesh-tool/overview.md)
 - Switch from DataTable to **DataAsset** (DeformableMesh)
-    - One mesh per data asset instead of potentially multiple meshes in one data table. Migrate or re-create your old DataTables
+    - One mesh per data asset instead of potentially multiple meshes in one data table. [Migrate](upgrading.md) or re-create your old DataTables
 - Support for external marketplace plugin "[**RealtimeMeshComponent**](./installation/realtimemesh.md)"
 - Support for **LODs** (_only in combination with RealtimeMeshComponent_)
 - Refactorings
     - Most of the important functions were moved to C++ for better **performance**
     - Some deprecated functions were removed
-    - We make use of the **_OnRegister_** function instead of _BeginPlay_ for earlier loading of the mesh
-    - Several functions and properties were re-organized for better readability
+    - We now make use of the **``OnRegister``** function instead of ``BeginPlay`` for earlier loading of the mesh
+    - Several functions and properties were re-organized for better readability and usability
 - New Events
-    - DeformableMeshLoaded
-    - DeformableMeshInitialized
-    - DeformableMeshUpdated
-    - AfterImpact _(this one was broken in previous version)_
+    - ``DeformableMeshLoaded``
+    - ``DeformableMeshInitialized``
+    - ``DeformableMeshUpdated``
+    - ``AfterImpact`` _(this one was broken in previous version)_
 - New Settings
     - Performance-Settings
     - Profiling-Settings
 - Networking
-    - ResetDeformation is now replicated by default
-    - RandomCarColor is also replicated by default
+    - ``ResetDeformation`` is now replicated by default
+    - ``RandomCarColor`` is also replicated by default
+- ... many small things - too many to list them here :)

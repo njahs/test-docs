@@ -14,7 +14,7 @@ This is the [Deformable Mesh (Asset)](../mesh-asset/overview.md) that you create
 
 - **Collision Type Restriction** (optional): Only deform when hitting components that have this collision type. By default there is no restriction.
 - **Actor Type Restriction** (optional): Only deform when hitting an actor of this type. By default there is no restriction.
-- **Disable Hit**: Disable new hits (temporary?)
+- **Disable Hit**: Disable new hits completely. (temporary?)
 
 ## Deformation
 
@@ -42,7 +42,11 @@ Defines how damage (*per vertex*) is distributed based on distance to the center
 Minimum / Maximum Impact Radius (in cm). It affects how many vertices can move (deform) in a single impact. The minimum size corresponds to a very low force impact and the maximum size corresponds to a very high force impact. You can visualize this using the "[*Debug Impact*](#debug)" setting.
 
 ### None Physics - Mass Override
-This value (in kg) overrides the *mass* of the parent component (*skeletal or static mesh*). If specified, this mass is used to calculate the deformation. This setting is **mandatory** if the parent component *does not* simulate physics.
+This value (in kg) overrides the *mass* of the parent component (*skeletal or static mesh*) that is used to calculate the deformation. This setting is **mandatory** if the parent component *does not* simulate physics.
+
+:::info
+This setting ONLY affects the deformation calculation! The actual mass is NOT changed.
+:::
 
 ### NoiseEffects
 - **NoiseFactor**: This controls the frequency scaling of the noise layers. It determines how "*dense*" or "*spread out*" the noise effect is on the deformation. Higher values result in more rapid fluctuations in the noise (creating a finer noise pattern), while lower values create smoother, less detailed noise effects. Recommended value range: $[0.0, 1.0]$
@@ -112,7 +116,11 @@ All "... *LOD* ..." settings only affect the [Realtime Mesh Component](../../ins
 
 **Mesh draw type (RMC)**: (ONLY RMC) The rendering path to use. **Static** has lower overhead but requires a proxy recreation on change for all components. **Dynamic** has slightly higher overhead but allows for more efficient updates. See [official documentation](https://rmc.triaxis.games/component-core/structure/#frealtimemeshsection).
 
-**Use Parent Bounds**: Should the created Mesh Component use the [bounds](https://www.youtube.com/watch?v=4rrgldPmtE8) of its parent component? This potentially saves a lot of performance (at least for RMC)! If you have problems with *culling / flickering / shadows*: Try turning this off. *NOTE*: Bounds are NOT collision!
+**Use Parent Bounds**: Should the created Mesh Component use the [bounds](https://www.youtube.com/watch?v=4rrgldPmtE8) of its parent component? This potentially saves a lot of performance (at least for RMC)! If you have problems with *culling / flickering / shadows*: Try turning this off.
+
+:::info
+Bounds are NOT collision!
+:::
 
 ## Experimental
 

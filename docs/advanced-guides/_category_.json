@@ -2,7 +2,7 @@
   "label": "Advanced Guides",
   "position": 15,
   "link": {
-    "type": "doc",
-    "id": "advanced-guides/overview"
+    "type": "generated-index",
+    "description": "These guides will teach you advanced topics!"
   }
 }

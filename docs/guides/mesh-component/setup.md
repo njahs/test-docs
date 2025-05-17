@@ -22,5 +22,5 @@ This only describes the most basic setup. [Chaos Vehicles](../../advanced-guides
     - ... has collision enabled
     - ... in case of a skeletal mesh: has "*Simulation Generates Hit Events*" checked
 4. Select the recently created *Deformable Mesh Component* (**BP_DeformableMeshComp**) and configure it (see [Settings](settings.md)). The most important settings are:
-    - *[**MANDATORY**] Settings - Deformable Mesh*: Here you have to select your Deformable Mesh (created in Step 1)
-    - *Settings - Deformation - None Physics - Mass Override*: This is **MANDATORY** in case your static mesh does NOT simulate physics.
+    - *[**MANDATORY**] Settings - [Deformable Mesh](./settings.md#general)*: Here you have to select your Deformable Mesh (see Step 1)
+    - *Settings - Deformation - None Physics - [Mass Override](./settings.md#none-physics---mass-override)*: This is **MANDATORY** when your static mesh does NOT simulate physics.

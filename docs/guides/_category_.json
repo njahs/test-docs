@@ -2,7 +2,7 @@
   "label": "Guides",
   "position": 10,
   "link": {
-    "type": "doc",
-    "id": "guides/overview"
+    "type": "generated-index",
+    "description": "These guides will teach you everything you need to know about our plugin to create your first deformable mesh!"
   }
 }
