@@ -4,7 +4,6 @@ import type * as Preset from '@docusaurus/preset-classic';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
-
 // https://github.com/LayZeeDK/github-pages-docusaurus
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -48,7 +47,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,          
+          // editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,          
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -77,18 +76,18 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/dds_256.png',
     colorMode: { defaultMode: "dark" },
     navbar: {
       title: 'Deformation Component',
       logo: {
-        alt: 'MDeformation Component Logo',
-        src: 'img/logo.svg',
+        alt: 'Deformation Component Logo',
+        src: 'img/car_128.png',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docSidebar',
           position: 'left',
           label: 'Documentation',
         },
@@ -169,12 +168,6 @@ const config: Config = {
       }
     }
   } satisfies Preset.ThemeConfig,
-  // plugins: [
-  //   [
-  //     './src/plugins/test-plugin',
-  //     { /* options */}
-  //   ]
-  // ],
   plugins: [ 
     [require.resolve('docusaurus-plugin-image-zoom'), { id: 'docusaurus-plugin-image-zoom' }],
   ],
@@ -183,7 +176,8 @@ const config: Config = {
       src: 'bue-render/render.js',
       async: true,
     },
-  ], stylesheets: [
+  ], 
+  stylesheets: [
     "bue-render/render.css",
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',

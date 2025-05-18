@@ -9,10 +9,10 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 import ExampleCarBrowser from './img/example-car-browser.png';
-import ExampleCar from './img/example-car.png';
-import ExampleCarStaticMesh from './img/example-car-static.png';
+import ExampleCar from './img/example-car.webp';
+import ExampleCarStaticMesh from './img/example-car-static.webp';
 import ExampleMapBrowser from './img/example-map-browser.png';
-import ExampleMapOverview from './img/example-map-overview.png';
+import ExampleMapOverview from './img/example-map-overview.webp';
 
 import CaptionWrapper from "@site/src/components/CaptionWrapper";
 

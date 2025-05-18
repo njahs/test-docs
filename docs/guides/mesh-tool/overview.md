@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Deformation Data Tool
 
-import Overview from './img/tool-overview.png';
+import Overview from './img/tool-overview.webp';
 import Button from './img/tool-button.webp';
 
 The **DeformationDataTool** is where you'll *create*, *edit* and *preview* your [Deformable Meshes (assets)](../mesh-asset/overview.md).
